@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: TableReservationService
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    defer-datasource-initialization: true
+
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/table_service_db
+    username: root
+    password: zerobase
+    driver-class-name: org.mariadb.jdbc.Driver
+
+
+  jwt:
+    secret: mE9pen9iqUzAGwVgRje3ZHzxMH4VU2AF9dPh1saYHTKX4sftBS527bKMUg1Oib6jJQV6ET0+rmdn8Y462CHclA==
+
+logging:
+  level:
+    org.springframework.security: DEBUG

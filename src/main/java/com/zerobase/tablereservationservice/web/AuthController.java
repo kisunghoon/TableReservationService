@@ -22,8 +22,19 @@ public class AuthController {
 
     /**
      * 회원 가입 API
-     * @param request
-     * @return
+     * 사용자 회원 가입
+     * @param
+     * {
+     *     "username":"graceUser",
+     *     "password":"grace123!@#",
+     *     "roles":["ROLE_USER"]
+     * }
+     * 매장 관리자 회원 가입
+     * {
+     *     "username":"graceManager",
+     *     "password":"grace123!@#",
+     *     "roles":["ROLE_MANAGER"]
+     * }
      */
     @PostMapping("/signup")
     public ResponseEntity<?> signup(@RequestBody Auth.SignUp request){
